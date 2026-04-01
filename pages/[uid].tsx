@@ -31,6 +31,5 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: pages.map((page) => ({ params: { uid: page.uid } })),
     fallback: false,
-    pages
   };
 };
