@@ -7,7 +7,7 @@ interface HomeProps {
   settings: Content.SettingsDocument;
 }
 
-export default function Home({ navigation, settings, pages }: HomeProps) {
+export default function Home({ navigation, settings }: HomeProps) {
   return (
     <div>
       
