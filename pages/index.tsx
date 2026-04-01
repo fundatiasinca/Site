@@ -7,17 +7,10 @@ interface HomeProps {
   settings: Content.SettingsDocument;
 }
 
-export default function Home({ navigation, settings }: HomeProps) {
+export default function Home({ navigation, settings, pages }: HomeProps) {
   return (
     <div>
-      <h1>Fundatia Sinca</h1>
-      <nav>
-        {navigation.data.links.map((item, index) => (
-          <a key={index} href={asLink(item.link) || "#"}>
-            {asText(item.label)}
-          </a>
-        ))}
-      </nav>
+      
     </div>
   );
 }
@@ -27,11 +20,13 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
 
   const navigation = await client.getSingle("navigation");
   const settings = await client.getSingle("settings");
+  const pages = await client.getAllByType("page");
 
   return {
     props: {
       navigation,
       settings,
+      pages,
     },
   };
 };
