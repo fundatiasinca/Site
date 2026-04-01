@@ -1,0 +1,46 @@
+{
+  "id": "persoana",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "nume": {
+        "type": "Text",
+        "config": {
+          "label": "Nume",
+          "placeholder": ""
+        }
+      },
+      "pozitie": {
+        "type": "Text",
+        "config": {
+          "label": "Pozitie",
+          "placeholder": ""
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "order": {
+        "type": "Number",
+        "config": {
+          "label": "Order",
+          "placeholder": ""
+        }
+      }
+    }
+  },
+  "label": "Persoana",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

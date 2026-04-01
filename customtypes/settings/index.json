@@ -1,0 +1,77 @@
+{
+  "id": "settings",
+  "json": {
+    "Main": {
+      "siteTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Site Title",
+          "placeholder": "Title of the site",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "socials": {
+        "type": "Group",
+        "config": {
+          "label": "Socials",
+          "repeat": true,
+          "fields": {
+            "facebook": {
+              "type": "Link",
+              "config": {
+                "label": "facebook",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "instagram": {
+              "type": "Link",
+              "config": {
+                "label": "instagram",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "youtube": {
+              "type": "Link",
+              "config": {
+                "label": "youtube",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "twitter": {
+              "type": "Link",
+              "config": {
+                "label": "twitter",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "tiktok": {
+              "type": "Link",
+              "config": {
+                "label": "tiktok",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}
